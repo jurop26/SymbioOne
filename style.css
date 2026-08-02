@@ -696,34 +696,46 @@ nav ul a:hover {
 
 /* ─── GENERIC SUB-PAGES ───────────────────────── */
 .page-hero {
-  background: #f4f7fb;
-  padding: 56px 80px 40px;
-  border-bottom: 1px solid #e0e0e0;
+  background: var(--navy);
+  padding: 72px 80px 56px;
 }
 
 .page-hero h1 {
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .page-hero p {
-  font-size: 16px;
-  color: #555;
+  font-size: 15px;
+  color: #9ab8cc;
   max-width: 680px;
+  line-height: 1.75;
+}
+
+.page-hero strong {
+  color: #fff;
 }
 
 .page-content {
   padding: 56px 80px;
 }
 
+.page-content > p:first-child {
+  font-size: 16px;
+  color: #333;
+}
+
 .page-content h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 12px;
-  margin-top: 40px;
+  margin-top: 48px;
+  padding-left: 14px;
+  border-left: 3px solid var(--green);
 }
 
 .page-content h2:first-child {
@@ -735,6 +747,7 @@ nav ul a:hover {
   color: #444;
   margin-bottom: 16px;
   max-width: 720px;
+  line-height: 1.75;
 }
 
 .values-list {
