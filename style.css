@@ -57,16 +57,21 @@ nav {
 }
 
 .nav-logo-text strong {
-  display: block;
-  font-size: 17px;
+  font-size: 30px;
   font-weight: 900;
-  color: var(--navy);
   letter-spacing: 1px;
 }
-
 .nav-logo-text span {
-  font-size: 10px;
-  color: #999;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-logo-text .navy {
+  color: var(--navy);
+}
+
+.nav-logo-text .green {
+  color: var(--green);
 }
 
 nav ul {
@@ -631,6 +636,19 @@ nav ul a:hover {
 
 .kontakt-detail a:hover {
   color: #fff;
+}
+
+.kontakt-section {
+  margin-bottom: 24px;
+}
+
+.kontakt-section h3 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--green);
+  margin-bottom: 10px;
 }
 
 .kontakt-form {
