@@ -692,6 +692,26 @@ nav ul a:hover {
   background: var(--green-dark);
 }
 
+.form-status {
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.form-status--ok {
+  background: rgba(46, 139, 74, 0.2);
+  color: #a8f0be;
+  border: 1px solid rgba(46, 139, 74, 0.4);
+}
+
+.form-status--error {
+  background: rgba(200, 50, 50, 0.2);
+  color: #f5b8b8;
+  border: 1px solid rgba(200, 50, 50, 0.4);
+}
+
 .kontakt-map {
   background: #1a3a5c;
   border-radius: 4px;
