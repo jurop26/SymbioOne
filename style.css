@@ -37,23 +37,13 @@ nav {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
-.nav-logo-icon {
-  width: 42px;
-  height: 42px;
-  background: var(--navy);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: -1px;
+.nav-logo-icon img {
+  width: 110px;
+  margin-top: 12px;
 }
 
 .nav-logo-text strong {
