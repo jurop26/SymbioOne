@@ -60,6 +60,7 @@
         </div>
         <div id="form-status" class="form-status" style="display:none"></div>
         <form class="kontakt-form" action="send.php" method="post">
+            <input type="hidden" name="return_url" value="kontakt.html">
             <input type="text" name="name" placeholder="Jméno a příjmení" required>
             <input type="email" name="email" placeholder="E-mail" required>
             <input type="tel" name="phone" placeholder="Telefon">
@@ -79,6 +80,9 @@
                     el.classList.add('form-status--error');
                     el.textContent = '❌ Odeslání se nezdařilo. Zkuste to prosím znovu.';
                 }
+                // Scroll to message and auto-hide after 5 s
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(() => { el.style.display = 'none'; }, 5000);
             }
         </script>
         <div class="kontakt-map">
