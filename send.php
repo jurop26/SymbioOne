@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-$to = 'info@symbio.cz';
+$to = 'info@symbioone.cz';
 
 // Allow redirect only to relative paths on this site
 $raw_return = trim($_POST['return_url'] ?? 'kontakt.html');
@@ -23,7 +23,7 @@ if (!$name || !filter_var($email, FILTER_VALIDATE_EMAIL) || !$message) {
 
 $subject = "Zpráva z webu od: $name";
 $body    = "Jméno: $name\nE-mail: $email\nTelefon: $phone\n\nZpráva:\n$message";
-$headers = "From: noreply@symbio.cz\r\nReply-To: $email\r\nContent-Type: text/plain; charset=UTF-8";
+$headers = "From: noreply@symbioone.cz\r\nReply-To: $email\r\nContent-Type: text/plain; charset=UTF-8";
 
 if (mail($to, $subject, $body, $headers)) {
     header("Location: {$return_url}?status=ok");
