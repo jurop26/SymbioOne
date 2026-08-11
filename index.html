@@ -267,7 +267,6 @@
                     el.textContent = '❌ Odeslání se nezdařilo. Zkuste to prosím znovu.';
                 }
                 // Scroll to message and auto-hide after 5 s
-                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 setTimeout(() => { el.style.display = 'none'; }, 5000);
             }
         </script>
